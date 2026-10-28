@@ -20,8 +20,6 @@
         <!-- JavaScripts -->
         <script src="js/vendor/jquery-1.10.2.min.js"></script>
         <script src="js/vendor/modernizr.min.js"></script>
-        <script src="http://maps.googleapis.com/maps/api/js?key=">
-        </script>
 
 	</head>
 	<body>
@@ -47,6 +45,7 @@
                             <li><span></span><a href="#second-section" class="portfolio">Activities</a></li>
                             <li><span></span><a href="#map" class="map">Location</a></li>
                             <li><span></span><a href="#third-section" class="contact">Contact Us</a></li>
+                            <li><span></span><a href="https://school.ranjanravi.com/" class="external portal-link" target="_blank" rel="noopener">Login</a></li>
                         </ul>
                     </div>
                 </div> 
@@ -250,12 +249,12 @@
             <div class="row">
                 <div class="col-md-12">
                     <h4>Visit Us</h4>
-                    <p>This is where we operate</p>
+                    <p>This is where we operate &middot; <a href="https://maps.app.goo.gl/jyCobxVqJZZm2ziDA" target="_blank" rel="noopener" style="color: #fff; text-decoration: underline;">Open in Google Maps</a></p>
                 </div>   
             </div>
             <div class="row">
                 <div class="map-content">
-                    <div id="templatemo-map"></div>
+                    <iframe id="templatemo-map" src="https://maps.google.com/maps?q=MS+Public+School,+Pulwaghat,+Jaisinghpur+Purvi,+East+Champaran,+Bihar+845437&amp;z=15&amp;output=embed" style="border: 0;" allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="MS Public School location"></iframe>
                 </div>
             </div>
         </div>
@@ -306,13 +305,21 @@
                     <div class="contact-discription">
                         <h4>More About Us!</h4>
                         <p>
+                        <strong>MS Public School</strong>
                         <br><br>
-                        <strong>Mailing Address:</strong><br>
-                        Pulwaghat, Jaisinghpur Purvi, East Champaran Bihar 845437
+                        <strong>Address:</strong><br>
+                        Pulwaghat, Jaisinghpur, East Champaran, Motihari, Bihar 845437
                         <br><br>
-                        Tel: +91 9110200214<br>
-						Email: mpsjaisinghpur@gmail.com<br>
-                            Email: hr@mpsjaisinghpur.com
+                        <strong>Website:</strong> <a href="https://jewtrust.org" target="_blank" rel="noopener">jewtrust.org</a>
+                        <br><br>
+                        <strong>Bank Details:</strong><br>
+                        Account No: 39435530752<br>
+                        State Bank of India, Turkauliya<br>
+                        IFSC Code: SBIN0003016<br>
+                        UPI: 9525089461@paytm
+                        <br><br>
+                        Tel: <a href="tel:+919110200214">+91 9110200214</a>, <a href="tel:+919525089461">+91 9525089461</a><br>
+                        Email: <a href="mailto:mpsjaisinghpur@gmail.com">mpsjaisinghpur@gmail.com</a>
                         </p>
                     </div>
                 </div>
@@ -339,7 +346,8 @@
                         <div class="col-md-4">
                             <div class="social-icons">
                                 <ul>
-                                    <li><a href="#" class="#"><i class="fa fa-facebook"></i></a></li>
+                                    <li><a href="https://www.facebook.com/profile.php?id=61590998264473" target="_blank" rel="noopener" title="M.S Public School on Facebook"><i class="fa fa-facebook"></i></a></li>
+                                    <li><a href="https://www.youtube.com/@mspublicschoolpulwaghat9812" target="_blank" rel="noopener" title="M.S Public School on YouTube"><i class="fa fa-youtube-play"></i></a></li>
                                     <li><a href="#" class="#"><i class="fa fa-twitter"></i></a></li>
                                     <li><a href="#" class="#"><i class="fa fa-linkedin"></i></a></li>
                                     <li><a href="#" class="#"><i class="fa fa-rss"></i></a></li>
@@ -352,24 +360,6 @@
         </div>
     </footer>
 		<!-- Javascripts -->
-        <script>
-        function initialize()
-        {
-        var mapProp = {
-          center: new google.maps.LatLng(40.7828839,-73.9652425),
-          zoom: 15,
-		  scrollwheel: false,
-          mapTypeId:google.maps.MapTypeId.ROADMAP
-          };
-        var map=new google.maps.Map(document.getElementById("templatemo-map") ,mapProp);
-        }
-
-        google.maps.event.addDomListener(window, 'load', initialize);
-		google.maps.event.addDomListener(window, 'resize', function()
-		{
-			map.setCenter(center);
-		});
-        </script>
 		<script type="text/javascript" src="js/vendor/bootstrap.min.js"></script>
 		<script type="text/javascript" src="js/custom.js"></script>
 

@@ -33,4 +33,10 @@ jQuery(document).ready(function($){
   });
 });
 
+if (/^(localhost|127\.0\.0\.1)$/.test(location.hostname)) {
+  $(".portal-link").each(function() {
+    this.href = "http://" + location.hostname + ":8889/";
+  });
+}
+
 $(".navbar-collapse").css({ maxHeight: $(window).height() - $(".navbar-header").height() + "px" });
