@@ -1,5 +1,6 @@
 (() => {
   const SCHOOL_EMAIL = "mpsjaisinghpur@gmail.com";
+  const LOGIN_URL = "https://ranjanravi.com/school/frontend/login.html";
   const shell = document.getElementById("shell");
   const pages = [...document.querySelectorAll(".page")];
   const navLinks = [...document.querySelectorAll(".nav a[data-id]")];
@@ -10,6 +11,10 @@
 
   function route() {
     const id = location.hash.replace("#", "");
+    if (id === "login") {
+      location.replace(LOGIN_URL);
+      return;
+    }
     const page = pages.find((p) => p.dataset.page === id) || pages[0];
     pages.forEach((p) => p.classList.toggle("active", p === page));
     navLinks.forEach((a) => a.classList.toggle("active", a.dataset.id === page.dataset.page));
